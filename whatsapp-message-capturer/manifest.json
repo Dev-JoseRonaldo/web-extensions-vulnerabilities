@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsApp Message Capturer",
+  "description": "Capture WhatsApp messages and print to console.",
+  "version": "1.0.0",
+  "permissions": ["storage"],
+  "host_permissions": ["https://web.whatsapp.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
