@@ -55,8 +55,8 @@ O script irá acessar a Chrome Web Store, extrair os IDs das extensões e baixar
 
 ### 📝 TO-DO
 - [x] Extrair dados do `manifest.json` do maior número possível de extensões.
-- [ ] Adicionar, no json de saída, a quantidade de usuários de cada extensão.
-- [ ] Criar arquivo de logs parao processo de extração dos dados.
+- [x] Adicionar, no json de saída, a quantidade de usuários de cada extensão.
+- [x] Criar arquivo de logs parao processo de extração dos dados.
 - [ ] Analisar os campos `permissions`, `host_permissions` e `content_scripts` para avaliar possíveis vetores de ataque. 
 - [ ] Identificar cenários em que combinações desses campos possam representar riscos à segurança.
 - [ ] Criar provas de conceito para explorar esses cenários e obter estatísticas sobre as extensões mapeadas.
